@@ -39,6 +39,7 @@ againBtn.addEventListener('click', () => {
     document.body.style.backgroundColor = '#222';
     score = 20;
     scoreEl.textContent = score;
-    message('Start guessing...');
+    message('Guess the number between 1 and 20');
     secretNumber = Math.trunc(Math.random() * 20 + 1);
+    numInput.value = '';
 });
